@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Повна адаптація під денну (світлу) тему */
+html:not(.dark) body,
+html:not(.dark) .bg-slate-950 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Висвітлюємо всі картки, шапку, футер та градієнти */
+html:not(.dark) header,
+html:not(.dark) section,
+html:not(.dark) footer,
+html:not(.dark) [class*="bg-slate-900"],
+html:not(.dark) [class*="bg-slate-800"] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Вкладені міні-картки робимо світло-сірими для контрасту */
+html:not(.dark) section div[class*="bg-slate-"],
+html:not(.dark) footer div[class*="bg-slate-"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Робимо весь світлий текст темним (зокрема слово "Ілля") */
+html:not(.dark) header h1,
+html:not(.dark) .text-white,
+html:not(.dark) .text-slate-100,
+html:not(.dark) .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html:not(.dark) .text-slate-300,
+html:not(.dark) .text-slate-400,
+html:not(.dark) .text-slate-500 {
+  color: #334155 !important;
+}
+
+/* Зберігаємо білий текст на зелених кнопках */
+html:not(.dark) a[class*="bg-emerald-"],
+html:not(.dark) button[class*="bg-emerald-"] {
+  color: #ffffff !important;
+}
